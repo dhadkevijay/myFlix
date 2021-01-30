@@ -1,0 +1,29 @@
+.Admin {
+
+    .image {
+
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        img {
+
+            width: 100%;
+            max-width: 1000px;
+            margin-bottom: 2rem;
+        }
+
+        input {
+
+            width: 90%;
+            max-width: 1200px;
+            border-radius: 30px;
+        }
+
+        button {
+
+            color: orange;
+        }
+    }
+}

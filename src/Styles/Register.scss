@@ -1,0 +1,74 @@
+.Register {
+
+    display: flex;
+    width: 100%;
+    height: fit-content;
+    padding-top: 3rem;
+
+    img {
+
+        width: 100%;
+    }
+
+    .right {
+
+        padding: 0 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        h1 {
+
+            font-size: 3rem;
+            font-weight: 900;
+            width: 90%;
+            max-width: 500px;
+        }
+
+        form {
+
+            display: flex;
+            flex-direction: column;
+            margin-top: 2rem;
+            width: 90%;
+            max-width: 500px;
+
+            input {
+
+                width: 100%;
+                max-width: 500px;
+                border-radius: 5px;
+                margin-bottom: 1.5rem;
+                border: none;
+                box-shadow: 5px 10px 20px rgba( 0,0,0,0.1 );
+            }
+
+            div {
+
+                margin: 1rem 0 0 0;
+                width: 100%;
+                max-width: 500px;
+                text-align: end;
+
+                span {
+
+                    color: orange;
+                    cursor: pointer;
+                    margin-left: 10px;
+                    font-size: 1.3rem;
+                }
+            }
+        }
+    }
+
+    @media screen and ( max-width: 1160px ) {
+
+        flex-direction: column;
+        padding: 0 0 3rem 0;
+
+        .right, .left {
+
+            width: 100% !important;
+        }
+    }
+}

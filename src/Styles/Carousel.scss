@@ -1,0 +1,91 @@
+.Carousel {
+
+    padding: 0 2rem;
+    margin-top: 3rem;
+
+    .title {
+
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+        font-family: sans-serif;
+        font-weight: 900;
+        font-style: italic;
+        letter-spacing: 2px;
+    }
+
+    .row {
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 1rem;
+
+        h1 {
+
+            font-weight: 100;
+            text-transform: uppercase;
+            font-size: 1.2rem;
+        }
+
+        button {
+
+            width: 3.5rem;
+            height: 3.5rem;
+            border-radius: 50%;
+
+            &:not( :last-child ) {
+
+                margin-right: 1rem;
+            }
+        }
+    }
+
+    .container {
+
+        width: 100%;
+        margin: auto;
+        overflow-x: hidden;
+
+        .slide {
+
+            display: flex;
+            width: 100%;
+            height: fit-content;
+
+            .item {
+
+                display: flex;
+                flex-direction: column;
+                width: 500px;
+                margin-right: 3rem;
+
+                img {
+
+                    border-radius: 5px;
+                    width: 500px;
+                    height: auto;
+                    margin-bottom: 1rem;
+    
+                    &:not( :last-child ) {
+    
+                        margin-right: 3rem;
+                    }
+                }
+
+                .row {
+
+                    display: flex;
+                    justify-content: space-between;
+
+                    button {
+
+                        width: 10rem !important;
+                        height: 3rem !important;
+                        border-radius: 35px !important;
+                        border: 1px solid black;
+                    }
+                }
+            }
+        }
+    }
+}

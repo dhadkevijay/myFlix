@@ -1,0 +1,162 @@
+.Movie {
+
+    .notFound {
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 100vh;
+        width: 100%;
+    
+        img {
+    
+            max-width: 100vw;
+            max-height: 80vh;
+        }
+    
+        h1 {
+    
+            font-size: 3rem;
+        }
+    }
+
+    .content {
+
+        .background {
+
+            width: 100vw;
+            height: 75vh;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .ratingRow {
+
+            width: 100%;
+            display: flex;
+            margin-bottom: 1rem;
+
+            svg {
+
+                margin-right: 1rem;
+                cursor: pointer;
+            }
+        }
+
+        video {
+
+            width: 100vw;
+            max-height: 90vh;
+        }
+
+        .details {
+
+            padding: 2rem 1rem;
+
+            h1 {
+
+                font-size: 3.5rem;
+                font-weight: 600;
+                margin-bottom: 1rem;
+            }
+
+            span {
+
+                margin-bottom: 2rem;
+                display: block;
+                color: rgb(107, 107, 107);
+                line-height: 1.5rem;
+                letter-spacing: 1px;
+
+                @media screen and ( max-width: 1000px ) {
+
+                    font-size: 1rem;
+                }
+            }
+
+            .row {
+
+                width: 100%;
+                display: flex;
+                justify-content: flex-end;
+                margin-bottom: 2rem;
+
+                button {
+
+                    border: 1px solid black;
+
+                    &:first-child {
+
+                        margin-right: 1rem;
+                    }
+                }
+            }
+
+            .episode {
+
+                display: flex;
+                align-items: center;
+                margin-bottom: 1rem;
+                cursor: pointer;
+                width: fit-content;
+
+                svg {
+
+                    margin-right: 10px;
+                }
+
+                &:hover {
+
+                    color: orange;
+                }
+            }
+
+            .photos {
+
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                img {
+
+                    width: 95%;
+                    max-width: 1300px;
+                    border-radius: 5px;
+                    margin-top: 2rem;
+                }
+            }
+        }
+
+        .rating {
+
+            margin: 2rem 0;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            p {
+
+                font-size: 2rem;
+            }
+
+            svg {
+
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+.Loading {
+
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3rem;
+    letter-spacing: 1px;
+}
